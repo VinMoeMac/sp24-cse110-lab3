@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Description of your website">
+  <meta name="author" content="Vincent McCloskey">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Meeting Minutes for BusiCorp</h1>
+    <img src="Busicorp.jpg" alt="BusiCorp logo" width="400" height="200">
+    
+  </header>
+
+<h2>April 16th meeting: Check-ins</h2>
+
+<h3>Sections</h3>
+    <nav>
+      <ol>
+        <li><a href="#Attendance">Attendance</a></li>
+        <li><a href="#Agenda">Agenda</a></li>
+        <li><a href="#Notes">Notes</a></li>
+        <li><a href="#Recording">Recording</a></li>
+      </ol>
+    </nav>
+  <main>
+    <section id="#Attendance">
+      <h2>Those in Attendance</h2>
+      <ul>
+        <li>Billy</li>
+        <li>Bobby</li>
+        <li>Joey</li>
+      </ul>
+    </section>
+
+    <section id="Agenda">
+      <h2>Agenda</h2>
+      <ul>
+        <li>Talk about project deadline</li>
+        <li><strong>Announcement</strong> about Weekend Overtime</li>
+        <li>Reasons for budget cuts</li>
+        <li>fun video to finish the meeting</li>
+      </ul>
+    </section>
+
+    
+
+    <section id="Notes">
+      <h2>New Business info</h2>
+      <ul>
+        <li>We want the project X completed on the 20th of April</li>
+        <li>Mandatory overtime this weekend <em>You will be compensated</em></li>
+        <li><strong>BUDGET CUTS</strong> simplify the project</li>
+        <li>We all loved this <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">music video</a></li>
+      </ul>
+    </section>
+
+    <section id="Misc">
+      <h2>Miscellanous comments/questions</h2>
+      <ul>
+        <li>General concerns considering budget cuts.
+        <li>Stopping computer gaming at work</li>
+      </ul>
+    </section>
+
+
+    <section id="Recording">
+      <h2>Recording</h2>
+      <p>Following is the <b>video</b> of the meeting</p>
+      <video controls>
+        <source src="Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <details>
+        <summary>Click for <i>audio</i> file</summary>
+        <audio controls>
+          <source src="Video.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </details>
+    </section>
+  </main>
+
+  <h2>Div and Span</h2>
+  <div>
+    <span>This is a span element</span>
+    <div>This is a div element</div>
+  </div>
+
+  <hr>
+
+
+
+  <form>
+    <fieldset>
+      <legend>Questions? <b>Contact Us</b></legend>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message"></textarea><br>
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">Subscribe to our newsletter</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <label for="birthdate">Birthdate:</label><br>
+      <input type="date" id="birthdate" name="birthdate"><br>
+      <label for="color">Favorite color:</label><br>
+      <input type="color" id="color" name="color"><br>
+      <label for="browser">Preferred browser:</label><br>
+      <select id="browser" name="browser">
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="safari">Safari</option>
+        <option value="edge">Edge</option>
+      </select><br>
+      <label for="car">Fav Car Brand:</label><br>
+      <datalist id="car">
+        <option value="Volvo">
+        <option value="Saab">
+        <option value="Mercedes">
+        <option value="Audi">
+      </datalist>
+      <input list="car" name="car"><br>
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+
+  <footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
