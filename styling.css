@@ -8,7 +8,7 @@
 body {
     color: limegreen;
     background: rgb(0, 0, 0);
-    font-family: "Jersey 20";
+     font-family: "Jersey 20"; 
 
     
 }
@@ -20,26 +20,26 @@ body {
     width: 10vw
 }
 
-/*
+
 .info{
     display:flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    display: inline-block;
+    justify-content: space-evenly;
 }
-*/
-#Attendance, #Agenda, #Notes, #Misc, #Recording{
+
+
+.info section {
+    
     border-radius: 20px;
     border-width: .1em;
     border-color: #ffffff;
     border-style: dashed;
    
     background: hsl(0, 0%, 43%);
-    width:30vw;
+    width: 30vw;
     margin:auto;
 
-    padding:10px
+    padding:10px 
     
 }
 
@@ -50,3 +50,9 @@ body {
 .divspan{
     display:none;
 }
+
+.contact{
+    display:grid;
+
+}
+
