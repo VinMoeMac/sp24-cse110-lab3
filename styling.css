@@ -55,4 +55,7 @@ body {
     display:grid;
 
 }
+button:active{
+    background-color: color-mix(in srgb, black 50%, white 50%);
+} 
 
