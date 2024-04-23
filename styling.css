@@ -17,5 +17,12 @@ body {
     position: fixed;
     top: 0px;
     right: 0px;
-    width: 2vw
+    width: 10vw
+}
+
+.nav{
+    border:.1em solid #ffffff;
+    background: hsl(0, 0%, 58%);
+    width:40vw;
+    margin: auto;
 }
