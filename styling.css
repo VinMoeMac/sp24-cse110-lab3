@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: "Jersey 20";
     src: url("Jersey20-Regular.ttf");
@@ -7,4 +9,13 @@ body {
     color: limegreen;
     background: rgb(0, 0, 0);
     font-family: "Jersey 20";
+    text-decoration: dashed;
+    text-align: center;
+}
+
+#logo{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
 }
