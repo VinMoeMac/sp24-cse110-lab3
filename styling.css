@@ -44,7 +44,7 @@ body {
 }
 
 #Attendance:hover, #Agenda:hover, #Notes:hover, #Misc:hover, #Recording:hover{
-    text-transform:initial;
+    background-color: rgba(0, 255, 255, 0.117);
 }
 
 .divspan{
