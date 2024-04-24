@@ -1,30 +1,60 @@
 
+/* Media Query for Font Size */
+@media (max-width: 800px) {
+    *{
+        font: size 20px;
+    }
+}
 
+/* Creates variable to hold main color of text on website */
+:root {
+    --main-color: rgb(41, 109, 235);
+}
+  
+
+/* Custom Font */
 @font-face {
     font-family: "Jersey 20";
     src: url("Jersey20-Regular.ttf");
 }
 
+/* Applies font to everything */
 *{
     font-family: "Jersey 20"; 
-    font-size: 120%;
+    font-size: 110%;
+    /* Nested Selector to Make the header stick to the top*/
+    header{
+        font-size: 170%;
+        position: sticky;
+        top: 1vh;
+        background-color: rgb(163, 163, 163);
+        width: 20em;
+        height: 2em;
+        text-align: center;
+        margin:auto;
+        text-decoration: underline;
+    }
 }
+
+/* Colors and block displays the body with a background */
+/* Also uses the vaiable for main text as well as a fallback for certain browsers */
 body {
     color: rgb(41, 109, 235);
+    color: var(--main-color);
     background: rgb(195, 189, 189);
-
-
+    display: block;
     
 }
 
+/* Fixes logo to the top */
 #logo{
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 5px;
+    right: 1cm;
     width: 10vw
 }
 
-
+/* flex displays the info sections */
 .info{
     display:flex;
     flex-wrap: wrap;
@@ -32,30 +62,35 @@ body {
 }
 
 
+/* Manually assigns borders, margins, paddings and more to the Sections in the flexbox */
 .info section {
     
-    border-radius: 20px;
+    border-radius: 10mm;
     border-width: .1em;
     border-color: #787777;
     border-style: solid;
     flex-grow: 1;
     background: hsl(0, 0%, 82%);
     width: 30vw;
-
-    margin:2% 2% 2% 2%;
-    padding:2% 2% 2% 2%;
+    min-width: 10em;
+    max-width: 60em;
+    margin:2vh 2vh 2vh 2vh;
+    padding:2vh 2vh 2vh 2vh;
     
 }
 
+/* When hovering over section background color changes */
 #Attendance:hover, #Agenda:hover, #Notes:hover, #Misc:hover, #Recording:hover{
     background-color: rgba(0, 255, 255, 0.117);
 }
 
+/* hides the display of the practice span and div text from lab 2 */
 .divspan{
     display:none;
 }
 
-.contact{
+/* displays and sets up a grid in the contact fieldset to divide questions and answers */
+fieldset.contact{
     display:grid;
     grid-template-columns: 10vw 80vw;
     grid-template-rows: 5%;
@@ -68,20 +103,42 @@ body {
     padding-left: 1%;
     padding-right: 1%;
 }
+
+/* Colors each label red and puts them on the left side of the grid */
 .contact >label{
     color:color(srgb 1 0 0);
     grid-column-start: 1;
 }
+
+/* Colors answers sections black and puts them in the right side of the grid */
 .contact >input,select,textarea{
-    color:rgb(255, 0, 204);
+    color:black;
     grid-column-start: 2;
 
 }
 
+/* Expands the submit button accross the entirety of the grid */
 [type="submit"]{
     grid-column: 1/3;
+    border: 10rem;
 }
+/* When submit is actively being pressed the background is dark grey */
 button:active{
     background-color: color-mix(in srgb, black 50%, white 50%);
+    
 } 
 
+/* colors the footer golden */
+main ~ footer{
+    color: darkgoldenrod;
+}
+
+/* every h2 above unordered lists is turned dark blue */
+h2:has(+ul){
+    color:rgb(1, 0, 68)
+}
+
+/* Every unordered list under an h2 is colored blueviolet */
+h2+ul{
+    color:blueviolet
+}
