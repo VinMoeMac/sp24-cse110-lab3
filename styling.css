@@ -24,7 +24,7 @@
     font-size: 110%;
     /* Nested Selector to Make the header stick to the top*/
     & header{
-        font-size: 170%;
+        font-size: 160%;
         position: sticky;
         top: 1vh;
         background-color: rgb(163, 163, 163);
@@ -116,7 +116,7 @@ fieldset.contact{
 .contact >input,select,textarea{
     color:black;
     grid-column-start: 2;
-
+    align-self: center;
 }
 
 /* Expands the submit button accross the entirety of the grid */
