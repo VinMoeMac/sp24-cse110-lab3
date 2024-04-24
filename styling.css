@@ -5,10 +5,13 @@
     src: url("Jersey20-Regular.ttf");
 }
 
+*{
+    font-family: "Jersey 20"; 
+}
 body {
     color: rgb(41, 109, 235);
     background: rgb(195, 189, 189);
-     font-family: "Jersey 20"; 
+
 
     
 }
@@ -53,7 +56,28 @@ body {
 
 .contact{
     display:grid;
+    grid-template-columns: 10vw 90vw;
+    grid-template-rows: 5%;
+    
+   
+}
+.contact >label{
+    color:red;
+    grid-column-start: 1;
+    button{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+.contact >input,select,textarea{
+    color:rgb(255, 0, 204);
+    grid-column-start: 2;
 
+}
+
+[name="car"]{
+    color:rgb(255, 0, 204);
+    grid-column-start: 2;
 }
 button:active{
     background-color: color-mix(in srgb, black 50%, white 50%);
