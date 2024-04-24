@@ -2,7 +2,7 @@
 /* Media Query for Font Size */
 @media (max-width: 800px) {
     *{
-        font: size 20px;
+        font-size: 20px;
     }
 }
 
@@ -23,7 +23,7 @@
     font-family: "Jersey 20"; 
     font-size: 110%;
     /* Nested Selector to Make the header stick to the top*/
-    header{
+    & header{
         font-size: 170%;
         position: sticky;
         top: 1vh;
@@ -105,7 +105,7 @@ fieldset.contact{
 }
 
 /* Colors each label red and puts them on the left side of the grid */
-.contact >label{
+.contact label{
     color:color(srgb 1 0 0);
     grid-column-start: 1;
 }
