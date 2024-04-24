@@ -28,11 +28,13 @@
         position: sticky;
         top: 1vh;
         background-color: rgb(163, 163, 163);
-        width: 20em;
-        height: 2em;
+        width: 50%;
+        height: 10%;
         text-align: center;
         margin:auto;
         text-decoration: underline;
+        align-content: center;
+        flex:1;
     }
 }
 
